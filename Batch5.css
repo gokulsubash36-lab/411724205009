@@ -12,7 +12,12 @@ body{
 img{
     height: 500px;
     width: 500px;
-    border-radius: 100px;
+}
+
+@media(min-width: 1024px)
+img{
+   height : auto;
+   width: 100%;
 }
 
 video{
@@ -46,13 +51,13 @@ table, th, td{
     border: 1px solid red;
     border-collapse: collapses;
 }
-
+@media(min-width: 1024px){
 nav{
     display: flex;
     flex-direction: column;
     gap: 50px;
+ }
 }
-
 #p1{
     font-style: italic;
 }
@@ -65,9 +70,3 @@ nav{
     font-size: xx-large;
 
 }
-
-.grid{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-}
-
